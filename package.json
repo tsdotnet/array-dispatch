@@ -48,6 +48,6 @@
     "typescript": "^3.9.2"
   },
   "dependencies": {
-    "@tsdotnet/array-copy": "^1.0.7"
+    "@tsdotnet/array-copy": "^1.0.8"
   }
 }
