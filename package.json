@@ -53,7 +53,7 @@
     "typescript": "^3.9.3"
   },
   "dependencies": {
-    "@tsdotnet/array-copy": "^1.0.13",
+    "@tsdotnet/array-copy": "^1.0.14",
     "tslib": "^2.0.0"
   }
 }

@@ -1,5 +1,5 @@
 dependencies:
-  '@tsdotnet/array-copy': 1.0.13
+  '@tsdotnet/array-copy': 1.0.14
   tslib: 2.0.0
 devDependencies:
   '@types/chai': 4.2.11
@@ -203,24 +203,24 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-tsAQNx32a8CoFhjhijUIhI4kccIAgmGhy8LZMZgGfmXcpMbPRUqn5LWmgRttILi6yeGmBJd2xsPkFMs0PzgPCw==
-  /@tsdotnet/array-copy/1.0.13:
+  /@tsdotnet/array-copy/1.0.14:
     dependencies:
-      '@tsdotnet/array-init': 1.0.9
-      '@tsdotnet/exceptions': 1.0.15
+      '@tsdotnet/array-init': 1.0.11
+      '@tsdotnet/exceptions': 1.0.16
       tslib: 2.0.0
     dev: false
     resolution:
-      integrity: sha512-e+kfIlJFSQ3ebsSOsS/gDEXpjqD9JSTiY/+A7HqfuU/v2ChXX44TBPWf3ZOrv25DCcVIr3vB8BFHLHxN2RkVUQ==
-  /@tsdotnet/array-init/1.0.9:
+      integrity: sha512-aXiutM7ZEykKI2rVIjc1AUKYmv4HwSQNo/UiasB5CJukSrCD1zUxrESHtBwcBTZBlCV6LUtn/emDoiTLCbqdGw==
+  /@tsdotnet/array-init/1.0.11:
     dev: false
     resolution:
-      integrity: sha512-WFps6WNpBaI2EqWwENcsYgRteC3vo7I1/g66pE1mUw7Ok3Bo2SKbvQwo556fweNTs3OIXdUxLgu2+7oCuxq+Rg==
-  /@tsdotnet/exceptions/1.0.15:
+      integrity: sha512-0/RSLZjMwPZ1bG2+R3LR7j68sfVIvBHEibnhaUXm+IchcxxmIeaHCvXMOctOfuDKkck5hK8XhX12Wh+ULiVRQA==
+  /@tsdotnet/exceptions/1.0.16:
     dependencies:
       tslib: 2.0.0
     dev: false
     resolution:
-      integrity: sha512-U2ZKn+BRc2vMz4PKz1FegM9LSNCGAjhI0s6lZAe0DMC2beb6TJjFdJNZFnWuWZ81LQXeG1rLAFfKrWdrYzzt4Q==
+      integrity: sha512-uJwSxVgTVmNOSvit1TFLgFass/VGEyEDRx8zvgtC3YaAj/KCQi1wE/uchBIFaXCWYSmOELHZjDZRv4zYguVqTQ==
   /@types/chai/4.2.11:
     dev: true
     resolution:
@@ -3030,7 +3030,7 @@ packages:
     resolution:
       integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
 specifiers:
-  '@tsdotnet/array-copy': ^1.0.13
+  '@tsdotnet/array-copy': ^1.0.14
   '@types/chai': ^4.2.11
   '@types/mocha': ^7.0.2
   '@typescript-eslint/eslint-plugin': ^3.0.0
