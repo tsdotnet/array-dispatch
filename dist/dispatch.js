@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.dispatch = void 0;
 const tslib_1 = require("tslib");
-const array_copy_1 = tslib_1.__importDefault(require("@tsdotnet/array-copy"));
+const array_copy_1 = (0, tslib_1.__importDefault)(require("@tsdotnet/array-copy"));
 const VOID0 = void 0;
 /**
  * Simply takes a payload and passes it to all the listeners.
@@ -17,7 +17,7 @@ const VOID0 = void 0;
  * @param trap
  */
 function dispatch(listeners, payload, trap) {
-    dispatch.unsafe(array_copy_1.default(listeners), payload, trap);
+    dispatch.unsafe((0, array_copy_1.default)(listeners), payload, trap);
 }
 exports.dispatch = dispatch;
 (function (dispatch) {
@@ -74,7 +74,7 @@ exports.dispatch = dispatch;
         if (!listeners)
             return listeners;
         // Reuse the arrayCopy as the array result.
-        const result = array_copy_1.default(listeners);
+        const result = (0, array_copy_1.default)(listeners);
         if (listeners.length) {
             for (let i = 0, len = result.length; i < len; i++) {
                 const fn = result[i];
