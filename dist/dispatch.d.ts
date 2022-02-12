@@ -2,7 +2,7 @@
  * @author electricessence / https://github.com/electricessence/
  * Licensing: MIT
  */
-declare type Selector<TSource, TResult> = (e: TSource) => TResult;
+import { Selector } from '@tsdotnet/common-interfaces';
 export declare type DispatchErrorHandler = (ex: any, index: number) => void;
 /**
  * Simply takes a payload and passes it to all the listeners.

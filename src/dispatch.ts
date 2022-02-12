@@ -3,9 +3,8 @@
  * Licensing: MIT
  */
 
+import { Selector } from '@tsdotnet/common-interfaces';
 import arrayCopy from '@tsdotnet/array-copy';
-
-type Selector<TSource, TResult> = (e: TSource) => TResult;
 
 const VOID0: undefined = void 0;
 
