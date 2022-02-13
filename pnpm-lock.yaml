@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@tsdotnet/array-copy': ^1.0.16
+  '@tsdotnet/array-copy': ^1.0.17
   '@tsdotnet/common-interfaces': ^1.0.4
   '@types/chai': ^4.3.0
   '@types/mocha': ^9.1.0
@@ -25,7 +25,7 @@ specifiers:
   typescript: ^4.5.5
 
 dependencies:
-  '@tsdotnet/array-copy': 1.0.16
+  '@tsdotnet/array-copy': 1.0.17
   tslib: 2.3.1
 
 devDependencies:
@@ -318,8 +318,8 @@ packages:
     resolution: {integrity: sha512-eZxlbI8GZscaGS7kkc/trHTT5xgrjH3/1n2JDwusC9iahPKWMRvRjJSAN5mCXviuTGQ/lHnhvv8Q1YTpnfz9gA==}
     dev: true
 
-  /@tsdotnet/array-copy/1.0.16:
-    resolution: {integrity: sha512-OK+iL1TXJzFewt7sPj7Zqa1ynneyAQ6zUuS3H/KbFO0lItd/VGZOyig4EdKWMi62jjhSAwI1NDnPBxkV11s0+Q==}
+  /@tsdotnet/array-copy/1.0.17:
+    resolution: {integrity: sha512-F2FUEEejH+rLxke0GNsWxCYUB3vPGH5xkJ/GXQpQMoU15oT1wOitWodiU4gxp9Ti0xqQPvYNAu//xaQInZOtfg==}
     dependencies:
       '@tsdotnet/array-init': 1.0.11
       '@tsdotnet/exceptions': 1.0.18
