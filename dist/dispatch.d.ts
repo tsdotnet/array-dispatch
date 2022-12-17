@@ -3,7 +3,7 @@
  * Licensing: MIT
  */
 import { Selector } from '@tsdotnet/common-interfaces';
-export declare type DispatchErrorHandler = (ex: any, index: number) => void;
+export type DispatchErrorHandler = (ex: any, index: number) => void;
 /**
  * Simply takes a payload and passes it to all the listeners.
  * Makes a arrayCopy of the listeners before calling dispatchUnsafe.

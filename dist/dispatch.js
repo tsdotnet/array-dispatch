@@ -6,7 +6,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.dispatch = void 0;
 const tslib_1 = require("tslib");
-const array_copy_1 = (0, tslib_1.__importDefault)(require("@tsdotnet/array-copy"));
+const array_copy_1 = tslib_1.__importDefault(require("@tsdotnet/array-copy"));
 const VOID0 = void 0;
 /**
  * Simply takes a payload and passes it to all the listeners.
