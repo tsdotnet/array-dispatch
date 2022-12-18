@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@tsdotnet/array-copy': ^1.0.17
+  '@tsdotnet/array-copy': ^1.0.18
   '@tsdotnet/common-interfaces': ^1.0.4
   '@types/chai': ^4.3.4
   '@types/mocha': ^10.0.1
@@ -25,7 +25,7 @@ specifiers:
   typescript: ^4.9.4
 
 dependencies:
-  '@tsdotnet/array-copy': 1.0.17
+  '@tsdotnet/array-copy': 1.0.18
   tslib: 2.4.1
 
 devDependencies:
@@ -336,11 +336,11 @@ packages:
     resolution: {integrity: sha512-eZxlbI8GZscaGS7kkc/trHTT5xgrjH3/1n2JDwusC9iahPKWMRvRjJSAN5mCXviuTGQ/lHnhvv8Q1YTpnfz9gA==}
     dev: true
 
-  /@tsdotnet/array-copy/1.0.17:
-    resolution: {integrity: sha512-F2FUEEejH+rLxke0GNsWxCYUB3vPGH5xkJ/GXQpQMoU15oT1wOitWodiU4gxp9Ti0xqQPvYNAu//xaQInZOtfg==}
+  /@tsdotnet/array-copy/1.0.18:
+    resolution: {integrity: sha512-PMqoLT8yEWOQvXtG7WpYZgYlt/oWChZatcBNvgpJK+WH3z2j3JO5Xitwn/U4svDt9IcP/3dLGFMmFU5oFeAxzQ==}
     dependencies:
       '@tsdotnet/array-init': 1.0.11
-      '@tsdotnet/exceptions': 1.0.18
+      '@tsdotnet/exceptions': 1.0.19
       tslib: 2.4.1
     dev: false
 
@@ -352,8 +352,8 @@ packages:
     resolution: {integrity: sha512-/LngZd3+wOlPw5VdQMxB+QNLuVH+9QsqBD+RZyKEKDhENP36vPhsTGbvA7bFNITnN1AqPy/Ih+x8A+jCYUhUgA==}
     dev: true
 
-  /@tsdotnet/exceptions/1.0.18:
-    resolution: {integrity: sha512-POqwDDSOf0IfVdVZpLINYZr7lPw89o9uvjHqVNQtsXLuhOOwnBVPRplxDdkoiRlnfVq8DWkbXU9SRrSN2b6gOQ==}
+  /@tsdotnet/exceptions/1.0.19:
+    resolution: {integrity: sha512-P/Gb4bp6CAXR0Xnq9YV9c7XU3oTGRsoQKiP6pvN1dp2bCY0YC2w9FZU3ZrAsMWv6kX/KkHBjhidC4Bv4oLQdxQ==}
     dependencies:
       tslib: 2.4.1
     dev: false
