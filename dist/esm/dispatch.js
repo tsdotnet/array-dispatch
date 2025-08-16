@@ -1,12 +1,8 @@
-"use strict";
 /*!
  * @author electricessence / https://github.com/electricessence/
  * Licensing: MIT
  */
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.dispatch = void 0;
-const tslib_1 = require("tslib");
-const array_copy_1 = tslib_1.__importDefault(require("@tsdotnet/array-copy"));
+import arrayCopy from '@tsdotnet/array-copy';
 const VOID0 = void 0;
 /**
  * Simply takes a payload and passes it to all the listeners.
@@ -16,10 +12,10 @@ const VOID0 = void 0;
  * @param payload
  * @param trap
  */
-function dispatch(listeners, payload, trap) {
-    dispatch.unsafe((0, array_copy_1.default)(listeners), payload, trap);
+export function dispatch(listeners, payload, trap) {
+    dispatch.unsafe(arrayCopy(listeners), payload, trap);
 }
-exports.dispatch = dispatch;
+// eslint-disable-next-line @typescript-eslint/no-namespace
 (function (dispatch) {
     /**
      * Simply takes a payload and passes it to all the listeners.
@@ -74,7 +70,7 @@ exports.dispatch = dispatch;
         if (!listeners)
             return listeners;
         // Reuse the arrayCopy as the array result.
-        const result = (0, array_copy_1.default)(listeners);
+        const result = arrayCopy(listeners);
         if (listeners.length) {
             for (let i = 0, len = result.length; i < len; i++) {
                 const fn = result[i];
@@ -95,6 +91,6 @@ exports.dispatch = dispatch;
         return result;
     }
     dispatch.mapped = mapped;
-})(dispatch = exports.dispatch || (exports.dispatch = {}));
-exports.default = dispatch;
+})(dispatch || (dispatch = {}));
+export default dispatch;
 //# sourceMappingURL=dispatch.js.map

@@ -27,6 +27,7 @@ export function dispatch<T> (
 	dispatch.unsafe(arrayCopy(listeners), payload, trap);
 }
 
+// eslint-disable-next-line @typescript-eslint/no-namespace
 export namespace dispatch
 {
 	/**
