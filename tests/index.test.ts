@@ -29,6 +29,14 @@ describe('dispatch', () => {
 		expect(listener1).toHaveBeenCalledTimes(1);
 	});
 
+	it('should handle null listeners array', () => {
+		expect(() => dispatch(null as any, 'payload')).not.toThrow();
+	});
+
+	it('should handle undefined listeners array', () => {
+		expect(() => dispatch(undefined as any, 'payload')).not.toThrow();
+	});
+
 	it('should throw errors by default', () => {
 		const errorListener = vi.fn(() => {
 			throw new Error('Test error');
@@ -95,6 +103,14 @@ describe('dispatch.unsafe', () => {
 
 		expect(listener1).toHaveBeenCalledWith(payload);
 		expect(listener1).toHaveBeenCalledTimes(1);
+	});
+
+	it('should handle null listeners array', () => {
+		expect(() => dispatch.unsafe(null as any, 'payload')).not.toThrow();
+	});
+
+	it('should handle undefined listeners array', () => {
+		expect(() => dispatch.unsafe(undefined as any, 'payload')).not.toThrow();
 	});
 
 	it('should throw errors by default', () => {
@@ -167,8 +183,38 @@ describe('dispatch.mapped', () => {
 		expect(result).toBeNull();
 	});
 
+	it('should handle undefined listeners array', () => {
+		const result = dispatch.mapped(undefined as any, 'payload');
+		expect(result).toBeUndefined();
+	});
+
 	it('should handle empty listeners array', () => {
 		const results = dispatch.mapped([], 'payload');
 		expect(results).toEqual([]);
+	});
+
+	it('should handle listeners array with zero length', () => {
+		const emptyArrayLike = { length: 0 };
+		const results = dispatch.mapped(emptyArrayLike, 'payload');
+		expect(results).toEqual([]);
+	});
+
+	it('should throw errors by default in mapped function', () => {
+		const errorListener = vi.fn(() => {
+			throw new Error('Mapped test error');
+		});
+
+		expect(() => dispatch.mapped([errorListener], 'payload')).toThrow('Mapped test error');
+	});
+
+	it('should handle mixed successful and null listeners', () => {
+		const listener1 = vi.fn((x: string) => x.toUpperCase());
+		const listener3 = vi.fn((x: string) => x.toLowerCase());
+		
+		const results = dispatch.mapped([listener1, null, listener3] as any, 'Hello');
+		
+		expect(results).toEqual(['HELLO', undefined, 'hello']);
+		expect(listener1).toHaveBeenCalledWith('Hello');
+		expect(listener3).toHaveBeenCalledWith('Hello');
 	});
 });
