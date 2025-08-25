@@ -25,8 +25,8 @@ importers:
   .:
     dependencies:
       '@tsdotnet/array-copy':
-        specifier: ^1.2.3
-        version: 1.2.3
+        specifier: ^1.2.4
+        version: 1.2.4
       '@tsdotnet/common-interfaces':
         specifier: ^1.0.6
         version: 1.0.6
@@ -513,8 +513,8 @@ packages:
     resolution: {integrity: sha512-LtoMMhxAlorcGhmFYI+LhPgbPZCkgP6ra1YL604EeF6U98pLlQ3iWIGMdWSC+vWmPBWBNgmDBAhnAobLROJmwg==}
     engines: {node: '>=18'}
 
-  '@tsdotnet/array-copy@1.2.3':
-    resolution: {integrity: sha512-kguEQtLno8C0uPE3GclAgq4hVZuuQChKCE2sy0c8l6h3sqk/qma2nBLZxmM6/VeMbjcvXwZFqoy7apy0gqBe8A==}
+  '@tsdotnet/array-copy@1.2.4':
+    resolution: {integrity: sha512-ekWFRgbWx9bSXyq0WyTBBsPxUT5+L931ogPnCstjLfF9R08v+lylC5DjOAX3utCuD56rpcBUHnQdQqBDO86lMQ==}
 
   '@tsdotnet/array-init@1.2.3':
     resolution: {integrity: sha512-guojmJOdeM0muCvKrzPo5SuQtpayAZhcG6T8t2z3QalhCcyY7ILA9+EybxolTsZkgQF2FkvdKQlkZEC+QyT25w==}
@@ -1795,7 +1795,7 @@ snapshots:
 
   '@sindresorhus/merge-streams@2.3.0': {}
 
-  '@tsdotnet/array-copy@1.2.3':
+  '@tsdotnet/array-copy@1.2.4':
     dependencies:
       '@tsdotnet/array-init': 1.2.3
       '@tsdotnet/common-interfaces': 1.0.6
