@@ -528,14 +528,14 @@ packages:
   '@tsdotnet/array-copy@1.2.4':
     resolution: {integrity: sha512-ekWFRgbWx9bSXyq0WyTBBsPxUT5+L931ogPnCstjLfF9R08v+lylC5DjOAX3utCuD56rpcBUHnQdQqBDO86lMQ==}
 
-  '@tsdotnet/array-init@1.2.3':
-    resolution: {integrity: sha512-guojmJOdeM0muCvKrzPo5SuQtpayAZhcG6T8t2z3QalhCcyY7ILA9+EybxolTsZkgQF2FkvdKQlkZEC+QyT25w==}
+  '@tsdotnet/array-init@1.2.4':
+    resolution: {integrity: sha512-vFoziLJAkXhC16clbffHYNty2mzvy+4g+ZzrKKUvz9gLbZmdAdlq9f6qQAbeefP1FE+r/kf2XGzRU65yvAjz9g==}
 
   '@tsdotnet/common-interfaces@1.0.6':
     resolution: {integrity: sha512-JHyYznerNMxZD2jl1aUmrguw3ge0PzqQf6PyYdw9jAoPGuzKRDYX7fX4OK7LDdLBU3yaUdY5WXEqbvX5IgVCJA==}
 
-  '@tsdotnet/exceptions@1.2.5':
-    resolution: {integrity: sha512-zzlm7OBkgc5EYz3Wu5oEqMisEFSPdJsgItFbnWk9OwE1k7QLj69Ub0DJ8hQJFp1Qd6qUJAx9hufHXuOD6jTshQ==}
+  '@tsdotnet/exceptions@1.2.9':
+    resolution: {integrity: sha512-Gd0BnH5VjU38gpJSZF0Dt0uqEk118bFHEWjtquY4FTJ/bac5kRHr+kLdh4Eo56h3iED9qFtWWiPDbl0XqpgTOg==}
 
   '@types/chai@5.2.3':
     resolution: {integrity: sha512-Mw558oeA9fFbv65/y4mHtXDs9bPnFMZAL/jxdPFUpOHHIXX91mcgEHbS5Lahr+pwZFR8A7GQleRWeI6cGFC2UA==}
@@ -1632,18 +1632,18 @@ snapshots:
 
   '@tsdotnet/array-copy@1.2.4':
     dependencies:
-      '@tsdotnet/array-init': 1.2.3
+      '@tsdotnet/array-init': 1.2.4
       '@tsdotnet/common-interfaces': 1.0.6
-      '@tsdotnet/exceptions': 1.2.5
+      '@tsdotnet/exceptions': 1.2.9
       tslib: 2.8.1
 
-  '@tsdotnet/array-init@1.2.3':
+  '@tsdotnet/array-init@1.2.4':
     dependencies:
       tslib: 2.8.1
 
   '@tsdotnet/common-interfaces@1.0.6': {}
 
-  '@tsdotnet/exceptions@1.2.5':
+  '@tsdotnet/exceptions@1.2.9':
     dependencies:
       tslib: 2.8.1
 

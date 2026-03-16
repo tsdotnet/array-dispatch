@@ -53,7 +53,7 @@ function dispatch(listeners, payload, trap) {
     }
     dispatch.mapped = mapped;
 })(dispatch || (dispatch = {}));
-var dispatch$1 = dispatch;
+var dispatch_default = dispatch;
 
-export { dispatch$1 as default, dispatch };
+export { dispatch_default as default, dispatch };
 //# sourceMappingURL=dispatch.js.map
