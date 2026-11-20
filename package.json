@@ -1,6 +1,6 @@
 {
   "name": "@tsdotnet/array-dispatch",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Helps invoke an array of functions, passing a payload to each.",
   "author": "electricessence",
   "license": "MIT",
