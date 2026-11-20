@@ -4,13 +4,17 @@
     (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory((global.tsdotnet = global.tsdotnet || {}, global.tsdotnet.arrayDispatch = global.tsdotnet.arrayDispatch || {}), global.tsdotnet.arrayCopy));
 })(this, (function (exports, arrayCopy) { 'use strict';
 
+    function _interopDefault (e) { return e && e.__esModule ? e : { default: e }; }
+
+    var arrayCopy__default = /*#__PURE__*/_interopDefault(arrayCopy);
+
     /*!
      * @author electricessence / https://github.com/electricessence/
      * Licensing: MIT
      */
     const VOID0 = void 0;
     function dispatch(listeners, payload, trap) {
-        dispatch.unsafe(arrayCopy(listeners), payload, trap);
+        dispatch.unsafe(arrayCopy__default.default(listeners), payload, trap);
     }
     (function (dispatch) {
         function unsafe(listeners, payload, trap) {
@@ -35,7 +39,7 @@
         function mapped(listeners, payload, trap) {
             if (!listeners)
                 return listeners;
-            const result = arrayCopy(listeners);
+            const result = arrayCopy__default.default(listeners);
             if (listeners.length) {
                 for (let i = 0, len = result.length; i < len; i++) {
                     const fn = result[i];
