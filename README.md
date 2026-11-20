@@ -1,4 +1,4 @@
-<a href="https://tsdotnet.github.io/array-dispatch/"><img src="https://cdn.jsdelivr.net/gh/tsdotnet/array-dispatch@master/assets/banner.svg" alt="@tsdotnet/array-dispatch: Call every listener. Safe even as the list changes."></a>
+<a name="banner"><img src="https://cdn.jsdelivr.net/gh/tsdotnet/array-dispatch@master/assets/banner.svg" alt="@tsdotnet/array-dispatch: Call every listener. Safe even as the list changes."></a>
 
 [![npm version](https://img.shields.io/npm/v/@tsdotnet/array-dispatch.svg?style=flat-square)](https://www.npmjs.com/package/@tsdotnet/array-dispatch)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/tsdotnet/array-dispatch/blob/master/LICENSE)
